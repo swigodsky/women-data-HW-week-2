@@ -1,0 +1,39 @@
+---
+title: "women_data"
+output: html_document
+---
+
+
+
+```{r women}
+summary(women)
+
+print('mean height') 
+mean(women$height)
+print('mean weight')
+mean(women$weight)
+print('median height')
+median(women[,1])
+print('median weight')
+median(women[,2])
+
+s_height <- c(women$height[1:10])
+s_weight <- c(women$weight[1:10])
+short_women <- data.frame(list(s_height, s_weight), stringsAsFactors = FALSE)
+names(short_women) <- list("Height-inches", "Weight-lbs")
+print(short_women)
+
+summary(short_women)
+print('mean height') 
+mean(short_women[,1])
+print('mean weight')
+mean(short_women[,2])
+print('median height')
+median(short_women[,1])
+print('median weight')
+median(short_women[,2])
+
+mytrial = short_women[short_women ==59]=40;short_women
+mytrial = short_women[short_women ==64]=70;short_women
+mytrial = short_women[short_women ==115]=100;short_women
+```
